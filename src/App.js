@@ -17,7 +17,7 @@ function App() {
       //Funcion para obtener los datos de la API
       const obtenerNoticias = async () => {
         //endpoint
-        const url = `http://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=b9ea14ecf191412c8dc2068a59579549`;
+        const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=b9ea14ecf191412c8dc2068a59579549`;
         //obtenemos las noticias
         const respuesta = await fetch(url);
         //Las pasamos a Json
